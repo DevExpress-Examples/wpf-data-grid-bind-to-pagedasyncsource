@@ -1,28 +1,33 @@
-﻿Imports System
+Imports System
 
 Namespace PagedAsyncSourceSample
+
     Public Class IssuesSummaries
-        Public Sub New(ByVal count As Integer, ByVal lastCreated? As Date)
+
+        Private _Count As Integer, _LastCreated As System.DateTime?
+
+        Public Sub New(ByVal count As Integer, ByVal lastCreated As System.DateTime?)
             Me.Count = count
             Me.LastCreated = lastCreated
         End Sub
 
-        Private privateCount As Integer
-        Public Property Count() As Integer
+        Public Property Count As Integer
             Get
-                Return privateCount
+                Return _Count
             End Get
+
             Private Set(ByVal value As Integer)
-                privateCount = value
+                _Count = value
             End Set
         End Property
-        Private privateLastCreated? As Date
-        Public Property LastCreated() As Date?
+
+        Public Property LastCreated As System.DateTime?
             Get
-                Return privateLastCreated
+                Return _LastCreated
             End Get
-            Private Set(ByVal value? As Date)
-                privateLastCreated = value
+
+            Private Set(ByVal value As System.DateTime?)
+                _LastCreated = value
             End Set
         End Property
     End Class

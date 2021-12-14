@@ -1,60 +1,70 @@
-﻿Imports System
+Imports System
 
 Namespace PagedAsyncSourceSample
+
     Public Class IssueData
-        Public Sub New(ByVal subject As String, ByVal user As String, ByVal created As Date, ByVal votes As Integer, ByVal priority As Priority)
+
+        Private _Subject As String, _User As String, _Created As DateTime, _Votes As Integer, _Priority As Priority
+
+        Public Sub New(ByVal subject As String, ByVal user As String, ByVal created As System.DateTime, ByVal votes As Integer, ByVal priority As PagedAsyncSourceSample.Priority)
             Me.Subject = subject
             Me.User = user
             Me.Created = created
             Me.Votes = votes
             Me.Priority = priority
         End Sub
-        Private privateSubject As String
-        Public Property Subject() As String
+
+        Public Property Subject As String
             Get
-                Return privateSubject
+                Return _Subject
             End Get
+
             Private Set(ByVal value As String)
-                privateSubject = value
+                _Subject = value
             End Set
         End Property
-        Private privateUser As String
-        Public Property User() As String
+
+        Public Property User As String
             Get
-                Return privateUser
+                Return _User
             End Get
+
             Private Set(ByVal value As String)
-                privateUser = value
+                _User = value
             End Set
         End Property
-        Private privateCreated As Date
-        Public Property Created() As Date
+
+        Public Property Created As DateTime
             Get
-                Return privateCreated
+                Return _Created
             End Get
-            Private Set(ByVal value As Date)
-                privateCreated = value
+
+            Private Set(ByVal value As DateTime)
+                _Created = value
             End Set
         End Property
-        Private privateVotes As Integer
-        Public Property Votes() As Integer
+
+        Public Property Votes As Integer
             Get
-                Return privateVotes
+                Return _Votes
             End Get
+
             Private Set(ByVal value As Integer)
-                privateVotes = value
+                _Votes = value
             End Set
         End Property
-        Private privatePriority As Priority
-        Public Property Priority() As Priority
+
+        Public Property Priority As Priority
             Get
-                Return privatePriority
+                Return _Priority
             End Get
+
             Private Set(ByVal value As Priority)
-                privatePriority = value
+                _Priority = value
             End Set
         End Property
     End Class
+
     Public Enum Priority
         Low
         BelowNormal

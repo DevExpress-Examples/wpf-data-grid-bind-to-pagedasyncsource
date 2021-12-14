@@ -1,47 +1,55 @@
-﻿Imports System
+Imports System
 
 Namespace PagedAsyncSourceSample
+
     Public Class IssueFilter
-        Public Sub New(Optional ByVal priority? As Priority = Nothing, Optional ByVal createdFrom? As Date = Nothing, Optional ByVal createdTo? As Date = Nothing, Optional ByVal minVotes? As Integer = Nothing)
+
+        Private _Priority As PagedAsyncSourceSample.Priority?, _CreatedFrom As System.DateTime?, _CreatedTo As System.DateTime?, _MinVotes As Integer?
+
+        Public Sub New(ByVal Optional priority As PagedAsyncSourceSample.Priority? = Nothing, ByVal Optional createdFrom As System.DateTime? = Nothing, ByVal Optional createdTo As System.DateTime? = Nothing, ByVal Optional minVotes As Integer? = Nothing)
             Me.Priority = priority
             Me.CreatedFrom = createdFrom
             Me.CreatedTo = createdTo
             Me.MinVotes = minVotes
         End Sub
-        Private privatePriority? As Priority
-        Public Property Priority() As Priority?
+
+        Public Property Priority As PagedAsyncSourceSample.Priority?
             Get
-                Return privatePriority
+                Return _Priority
             End Get
-            Private Set(ByVal value? As Priority)
-                privatePriority = value
+
+            Private Set(ByVal value As PagedAsyncSourceSample.Priority?)
+                _Priority = value
             End Set
         End Property
-        Private privateCreatedFrom? As Date
-        Public Property CreatedFrom() As Date?
+
+        Public Property CreatedFrom As System.DateTime?
             Get
-                Return privateCreatedFrom
+                Return _CreatedFrom
             End Get
-            Private Set(ByVal value? As Date)
-                privateCreatedFrom = value
+
+            Private Set(ByVal value As System.DateTime?)
+                _CreatedFrom = value
             End Set
         End Property
-        Private privateCreatedTo? As Date
-        Public Property CreatedTo() As Date?
+
+        Public Property CreatedTo As System.DateTime?
             Get
-                Return privateCreatedTo
+                Return _CreatedTo
             End Get
-            Private Set(ByVal value? As Date)
-                privateCreatedTo = value
+
+            Private Set(ByVal value As System.DateTime?)
+                _CreatedTo = value
             End Set
         End Property
-        Private privateMinVotes? As Integer
-        Public Property MinVotes() As Integer?
+
+        Public Property MinVotes As Integer?
             Get
-                Return privateMinVotes
+                Return _MinVotes
             End Get
-            Private Set(ByVal value? As Integer)
-                privateMinVotes = value
+
+            Private Set(ByVal value As Integer?)
+                _MinVotes = value
             End Set
         End Property
     End Class

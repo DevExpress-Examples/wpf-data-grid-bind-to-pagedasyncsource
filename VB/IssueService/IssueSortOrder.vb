@@ -1,4 +1,5 @@
-﻿Namespace PagedAsyncSourceSample
+Namespace PagedAsyncSourceSample
+
     Public Enum IssueSortOrder
         [Default]
         CreatedDescending
