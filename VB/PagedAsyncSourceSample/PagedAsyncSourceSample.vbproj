@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{79E2DF88-9F7F-4E69-BFFC-2EB43ED750AC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>PagedAsyncSourceSample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -60,14 +59,15 @@
     <Import Include="System.Windows.Shapes" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v21.1" />
-    <Reference Include="DevExpress.Mvvm.v21.1" />
-    <Reference Include="DevExpress.Printing.v21.1.Core" />
-    <Reference Include="DevExpress.Xpf.Core.v21.1" />
-    <Reference Include="DevExpress.Xpf.Printing.v21.1" />
-    <Reference Include="DevExpress.Xpf.Grid.v21.1" />
-    <Reference Include="DevExpress.Xpf.Grid.v21.1.Core" />
-    <Reference Include="DevExpress.Xpf.Grid.v21.1.Extensions" />
+    <Reference Include="DevExpress.Drawing.v22.2" />
+    <Reference Include="DevExpress.Data.v22.2" />
+    <Reference Include="DevExpress.Mvvm.v22.2" />
+    <Reference Include="DevExpress.Printing.v22.2.Core" />
+    <Reference Include="DevExpress.Xpf.Core.v22.2" />
+    <Reference Include="DevExpress.Xpf.Printing.v22.2" />
+    <Reference Include="DevExpress.Xpf.Grid.v22.2" />
+    <Reference Include="DevExpress.Xpf.Grid.v22.2.Core" />
+    <Reference Include="DevExpress.Xpf.Grid.v22.2.Extensions" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
