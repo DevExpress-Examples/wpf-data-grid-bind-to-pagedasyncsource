@@ -1,29 +1,34 @@
-﻿Imports System
+Imports System
 
 Namespace PagedAsyncSourceMVVMSample
-	Public Class IssuesSummaries
-		Public Sub New(ByVal count As Integer, ByVal lastCreated? As DateTime)
-			Me.Count = count
-			Me.LastCreated = lastCreated
-		End Sub
 
-		Private privateCount As Integer
-		Public Property Count() As Integer
-			Get
-				Return privateCount
-			End Get
-			Private Set(ByVal value As Integer)
-				privateCount = value
-			End Set
-		End Property
-		Private privateLastCreated? As DateTime
-		Public Property LastCreated() As DateTime?
-			Get
-				Return privateLastCreated
-			End Get
-			Private Set(ByVal value? As DateTime)
-				privateLastCreated = value
-			End Set
-		End Property
-	End Class
+    Public Class IssuesSummaries
+
+        Private _Count As Integer, _LastCreated As System.DateTime?
+
+        Public Sub New(ByVal count As Integer, ByVal lastCreated As System.DateTime?)
+            Me.Count = count
+            Me.LastCreated = lastCreated
+        End Sub
+
+        Public Property Count As Integer
+            Get
+                Return _Count
+            End Get
+
+            Private Set(ByVal value As Integer)
+                _Count = value
+            End Set
+        End Property
+
+        Public Property LastCreated As System.DateTime?
+            Get
+                Return _LastCreated
+            End Get
+
+            Private Set(ByVal value As System.DateTime?)
+                _LastCreated = value
+            End Set
+        End Property
+    End Class
 End Namespace
