@@ -4,14 +4,16 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # WPF Data Grid - Bind to PagedAsyncSource
-This example demonstrates how to bind the <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.class">GridControl</a> to <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Data.PagedAsyncSource.class">PagedAsyncSource</a>.
+This example demonstrates how to bind the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) to [PagedAsyncSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Data.PagedAsyncSource).
 
 The solution in this example includes the following projects:
 
 * **PagedAsyncSourceMVVMSample** - demonstrates the MVVM approach
 * **PagedAsyncSourceSample** - demonstrates a basic non-MVVM approach
 
-Refer to the <a href="https://documentation.devexpress.com/WPF/120194/Controls-and-Libraries/Data-Grid/Binding-to-Data/Binding-to-any-Data-Source-with-Virtual-Sources/How-to-Bind-to-Virtual-Source">How to Bind to Virtual Source</a> tutorial to learn more.
+Refer to the [How to Use Virtual Sources](https://docs.devexpress.com/WPF/120194/controls-and-libraries/data-grid/bind-to-data/bind-to-any-data-source-with-virtual-sources/use-virtual-sources) tutorial to learn more.
+
+![PagedAsyncSource](https://docs.devexpress.com/WPF/images/virtualsourcespagedasync133014.gif)
 
 ## A 1-Click Solution for CRUD Web API Services with Role-based Access Control via EF Core & XPO
 
